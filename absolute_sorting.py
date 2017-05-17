@@ -1,8 +1,5 @@
 def checkio(numbers_array):
-	abs_i = lambda numbers_array:(abs(i)for i in numbers_array)
-	numbers_array = sorted(abs_i(numbers_array))
-    return numbers_array
-
+    return sorted(numbers_array,key=abs)
 #These "asserts" using only for self-checking and not necessary for auto-testing
 if __name__ == '__main__':
     def check_it(array):
